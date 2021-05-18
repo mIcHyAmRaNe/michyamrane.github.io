@@ -3,6 +3,17 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+### Hello, i'm mIcHy AmRaNe
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I’m an Electronics student based in Algeria\
+I pass my free time helping people develop maintainable and scalable projects.
+
+I code primarily in Python & JavaScript and have some experience in C#.
+
+I'm also passionate about:
+- Gaming: Join me on League of Legends ([Dz Rekkles])
+- Football: Fan of Olympique de Marseille (moderator in the fb group: [Nous sommes l'OM])
+- Traveling
+
+[Dz Rekkles]: https://blitz.gg/lol/profile/euw1/DZ%20Rekkles
+[Nous sommes l'OM]: https://facebook.com/groups/603339949725466
