@@ -104,9 +104,6 @@ comments:
   disqus:
     shortname: "michyamrane"
 
-analytics:
-  provider: "custom"
-
 footer:
   links:
     - label: "Twitter"
