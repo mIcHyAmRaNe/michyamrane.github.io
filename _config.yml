@@ -24,6 +24,9 @@ twitter_username: michyamrane
 github_username: michyamrane
 search: true
 
+# SEO Related
+google_site_verification: "AWON19GiDbJu6E0DvGfVDXdi_NtY1DSfP314N7oXxd0"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
