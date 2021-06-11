@@ -103,9 +103,7 @@ author:
       url: "https://www.buymeacoffee.com/michyamrane"
 
 comments:
-  provider: "disqus"
-  disqus:
-    shortname: "michyamrane"
+  provider: "custom"
 
 footer:
   links:
