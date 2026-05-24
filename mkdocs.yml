@@ -7,13 +7,13 @@ site_url: https://michyamrane.github.io
 #   - Blog:
 #       - blog/index.md
 #   - "~/notes":
-#       - Basics: pentest/Basics.md
-#       - Metasploit: pentest/Metasploit.md
-#       - Network Discovery: pentest/Network Discovery.md
-#       - Passwords & Hashes: pentest/Passwords & Hashes.md
-#       - Pictures & Binaries: pentest/Pictures & Binaries.md
-#       - Uploads & Downloads: pentest/Uploads & Downloads.md
-#       - Post Exploit: pentest/Post Exploit.md
+#       - Basics: CTF/Basics.md
+#       - Metasploit: CTF/Metasploit.md
+#       - Network Discovery: CTF/Network Discovery.md
+#       - Passwords & Hashes: CTF/Passwords & Hashes.md
+#       - Pictures & Binaries: CTF/Pictures & Binaries.md
+#       - Uploads & Downloads: CTF/Uploads & Downloads.md
+#       - Post Exploit: CTF/Post Exploit.md
 
 not_in_nav: |
   /about.md

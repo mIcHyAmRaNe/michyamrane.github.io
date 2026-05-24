@@ -1,11 +1,7 @@
 ---
-draft: true 
 date: 2025-01-19 
 categories:
   - CTF
-  - Pentest
-  - Recon
-  - Web
 ---
 
 ![](https://gist.githubusercontent.com/mIcHyAmRaNe/0b370c808bd1a600778f6a3875e5a732/raw/35f2803c176eeb27d4eea5eac88087b0d78f0ecc/okadminfinder3-.png)
@@ -191,7 +187,7 @@ Built with Python 3.x, OKadminFinder offers a robust set of features to ensure e
 
 > [!IMPORTANT]
 > OKadminFinder is intended for educational purposes and authorized penetration testing only.\
-> Usage of OKadminFinder for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+> Usage of OKadminFinder for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by the user.
 
 ## License
 
@@ -200,6 +196,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Donate
 
 > [!NOTE]
-> If you find OKadminFinder useful and would like to support its development, you can donate to the following address:\
-> **Bitcoin Address:** `1LZiNVRZupWNbB9bEPxsiwoC5AGPAuFCjp` \
 > Your support is greatly appreciated ♥️
