@@ -1,0 +1,86 @@
+site_name: mIcHyAmRaNe's website
+site_author: mIcHyAmRaNe
+site_description: Data Engineer & AI Engineer — Portfolio
+site_url: michyamrane.github.io
+
+# nav:
+#   - Blog:
+#       - blog/index.md
+#   - "~/notes":
+#       - Basics: pentest/Basics.md
+#       - Metasploit: pentest/Metasploit.md
+#       - Network Discovery: pentest/Network Discovery.md
+#       - Passwords & Hashes: pentest/Passwords & Hashes.md
+#       - Pictures & Binaries: pentest/Pictures & Binaries.md
+#       - Uploads & Downloads: pentest/Uploads & Downloads.md
+#       - Post Exploit: pentest/Post Exploit.md
+
+not_in_nav: |
+  /about.md
+  /tags.md
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: pink
+    accent: pink
+  font:
+    text: Source Sans 3
+    code: JetBrains Mono
+  favicon: https://img.icons8.com/ios-filled/50/FFFFFF/pixel-heart.png
+  logo: https://img.icons8.com/ios-filled/50/FFFFFF/pixel-heart.png
+  custom_dir: overrides
+  features:
+    - content.code.copy
+    - search.suggest
+    - search.share
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.indexes
+    - navigation.path
+    - toc.follow
+    - navigation.top
+
+copyright: Copyright &copy; 2026 mIcHy AmRaNe
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mIcHyAmRaNe/
+  contact_email: michyamrane@duck.com
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - blog:
+      blog_dir: blog
+      post_url_format: "{slug}"
+      archive: false
+      categories: true
+      post_excerpt: required
+  - search
+  - tags
+  - macros
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - smarty

@@ -1,0 +1,37 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.14"
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Install dependencies
+        run: uv sync --frozen --group docs
+
+      - name: Deploy MkDocs
+        run: uv run mkdocs gh-deploy --force

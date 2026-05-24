@@ -1,0 +1,478 @@
+/* ============================================================
+   TOKENS & THEME
+   ============================================================ */
+:root {
+    --color-accent: #e92063;
+    --color-accent-dim: rgba(233, 32, 99, 0.12);
+    --color-accent-border: rgba(233, 32, 99, 0.3);
+    --color-bg-card: rgba(255, 255, 255, 0.04);
+    --color-bg-terminal: rgba(0, 0, 0, 0.55);
+    --color-text-muted: rgba(255, 255, 255, 0.55);
+    --color-text-body: rgba(255, 255, 255, 0.87);
+    --radius: 6px;
+    --transition: 0.18s ease;
+}
+
+/* ============================================================
+   FONTS
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;600&display=swap");
+
+/* ============================================================
+   GLOBAL NAV
+   ============================================================ */
+.md-header,
+.md-tabs,
+.md-nav {
+    font-family: "VT323", monospace;
+    font-size: 1rem;
+}
+
+.md-ellipsis {
+    font-size: 19px;
+}
+
+/* ============================================================
+   GLOBAL TEXT — fix dark-on-dark
+   ============================================================ */
+.md-typeset {
+    font-family: "Inter", sans-serif;
+    font-size: 0.82rem;
+    color: var(--color-text-body);
+}
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
+.md-typeset th {
+    color: var(--color-text-body);
+}
+
+.md-search-result .md-typeset {
+    font-size: 0.82rem;
+}
+
+/* nav sidebar text */
+.md-nav__item .md-nav__link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.md-nav__item .md-nav__link:hover,
+.md-nav__item .md-nav__link--active {
+    color: var(--color-accent);
+}
+
+/* ============================================================
+   SECTION HEADINGS
+   ============================================================ */
+.md-typeset h2 {
+    font-family: "VT323", monospace;
+    font-size: 1.9rem;
+    border-bottom: 1px solid var(--color-accent-border);
+    padding-bottom: 0.2rem;
+    color: var(--color-accent);
+}
+
+.md-typeset h3 {
+    font-family: "VT323", monospace;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================================
+   BUTTONS — small, cohérent
+   ============================================================ */
+.md-button {
+    padding: 0.22em 0.7em;
+    font-size: 0.7rem;
+    font-family: "JetBrains Mono", monospace;
+    border-radius: var(--radius);
+    letter-spacing: 0.02em;
+    transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition);
+    line-height: 1.6;
+}
+
+.md-button--primary {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff !important;
+}
+
+.md-button--primary:hover {
+    background: transparent;
+    /*color: var(--color-accent) !important;*/
+    border-color: var(--color-accent);
+}
+
+.md-button:not(.md-button--primary) {
+    background: transparent;
+    border-color: var(--color-accent-border);
+    color: var(--color-accent) !important;
+}
+
+.md-button:not(.md-button--primary):hover {
+    background: var(--color-accent-dim);
+    border-color: var(--color-accent);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 0.5rem 0 2.5rem;
+    width: 100%;
+}
+
+.hero__text {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.hero__text h1 {
+    font-family: "VT323", monospace;
+    font-size: 3.6rem;
+    line-height: 1;
+    color: var(--color-accent);
+    margin: 0 0 0.5rem;
+}
+
+.hero__text > p {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: var(--color-text-muted);
+    margin: 0 0 1.4rem;
+}
+
+.hero__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+/* Terminal */
+.hero__badge {
+    flex: 0 0 400px;
+    background: var(--md-code-bg-color--lighter);
+    border: 1px solid var(--color-accent-border);
+    border-radius: var(--radius);
+    padding: 1.4rem 1.8rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 2;
+    color: #e0e0e0;
+    backdrop-filter: blur(4px);
+}
+
+/* prefix ">" en accent */
+.hero__badge .highlight pre,
+.hero__badge code {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: inherit;
+    color: inherit;
+    box-shadow: none;
+}
+
+/* rend les lignes ">" roses, les valeurs blanches */
+.hero__badge .highlight .go {
+    color: #e0e0e0;
+}
+.hero__badge .highlight .gp {
+    color: var(--color-accent);
+}
+
+/* ============================================================
+   EXPERIENCE CARD
+   ============================================================ */
+.experience-card {
+    background: var(--color-bg-card);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1.4rem 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.experience-card h3 {
+    font-family: "VT323", monospace;
+    font-size: 1.4rem;
+    color: var(--color-accent);
+    margin: 0 0 0.2rem;
+}
+
+.experience-card p,
+.experience-card li {
+    color: var(--color-text-body);
+}
+
+.experience-card table {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.experience-card table th {
+    background: var(--color-accent-dim);
+    color: var(--color-accent);
+    padding: 0.35rem 0.75rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.experience-card table td {
+    padding: 0.35rem 0.75rem;
+    border-bottom: 1px solid var(--color-accent-border);
+    color: var(--color-text-body);
+}
+
+/* ============================================================
+   PROJECTS GRID — 3 colonnes desktop
+   ============================================================ */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    margin: 1.5rem 0;
+}
+
+.project-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-accent-border);
+    border-radius: var(--radius);
+    padding: 1.3rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition:
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.project-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 28px rgba(233, 32, 99, 0.12);
+}
+
+.project-card h3 {
+    font-family: "VT323", monospace;
+    font-size: 1.25rem;
+    color: var(--color-accent);
+    margin: 0;
+}
+
+.project-card > p {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    flex: 1;
+    margin: 0;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.2rem 0;
+}
+
+/* ============================================================
+   TAGS — inline code as pill
+   ============================================================ */
+.md-typeset .project-card code,
+.md-typeset .skill-category code,
+.md-typeset .experience-card code {
+    background: var(--color-accent-dim);
+    /*color: var(--color-text-muted);*/
+    border: 1px solid var(--color-accent-border);
+    border-radius: 3px;
+    padding: 0.05em 0.45em;
+    font-size: 0.68rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
+/* ============================================================
+   SKILLS GRID
+   ============================================================ */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.skill-category {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-accent-border);
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem;
+    transition: border-color var(--transition);
+}
+
+.skill-category:hover {
+    border-color: var(--color-accent);
+}
+
+.skill-category h3 {
+    font-family: "VT323", monospace;
+    font-size: 1rem;
+    color: var(--color-accent);
+    margin: 0 0 0.55rem;
+}
+
+.skill-category > p {
+    font-size: 0.76rem;
+    line-height: 1.9;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* ============================================================
+   EDUCATION GRID
+   ============================================================ */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+    margin: 1.5rem 0;
+}
+
+.education-card {
+    background: var(--color-bg-card);
+    border-top: 2px solid var(--color-accent);
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 1.2rem 1.4rem;
+}
+
+.education-card h3 {
+    font-family: "VT323", monospace;
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin: 0 0 0.3rem;
+}
+
+.education-card p {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* ============================================================
+   ABOUT GRID
+   ============================================================ */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.about-text h2 {
+    font-family: "VT323", monospace;
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin: 0 0 0.2rem;
+}
+
+.about-text h3 {
+    font-family: "VT323", monospace;
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin: 0 0 1rem;
+}
+
+.about-text p,
+.about-text li {
+    color: var(--color-text-body);
+}
+
+.about-links h3 {
+    font-family: "VT323", monospace;
+    font-size: 1.1rem;
+    color: var(--color-accent);
+}
+
+.about-links td,
+.about-links th {
+    color: var(--color-text-body);
+}
+
+/* ============================================================
+   FOOTER CTA
+   ============================================================ */
+.footer-cta {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--color-accent-border);
+}
+
+.footer-cta h2 {
+    font-family: "VT323", monospace;
+    font-size: 2rem;
+    color: var(--color-accent);
+}
+
+.footer-cta p {
+    color: var(--color-text-muted);
+    margin-bottom: 1.2rem;
+}
+
+.footer-cta .hero__links {
+    justify-content: center;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+    .hero__badge {
+        flex: 0 0 320px;
+        font-size: 0.75rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0 1.5rem;
+    }
+
+    .hero__badge {
+        flex: unset;
+        width: 100%;
+    }
+
+    .hero__text h1 {
+        font-size: 2.6rem;
+    }
+
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__text h1 {
+        font-size: 2.1rem;
+    }
+}

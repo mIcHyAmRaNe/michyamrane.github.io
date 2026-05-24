@@ -1,41 +1,27 @@
+# mIcHyAmRaNe's Website
 
-## michyamrane.github.io
+> Portfolio personnel - Data Engineer & AI Engineer
 
-My personal website.
+Site statique généré avec [MkDocs Material](https://squidfunk.github.io/mkdocs-material/),
+hébergé sur GitHub Pages.
 
-####  Dependencies
+🌐 **Live** → [michyamrane.github.io](https://michyamrane.github.io)
 
-- **[Jekyll]**: *simple, blog-aware static site generator*
-- **[Waline]**: *simple, Safe Comment System inspired by Valine*
-- **[Umami]**: *simple, fast, website analytics alternative to Google Analytics*
+---
 
-#### Prerequisites
-- [Vercel  account] : *Deploy Waline & Umami*
-- [Leancloud  account] : *Database for Waline*
-- [Heroku account] : *Database for Umami*
+## Stack
 
-### Development
+| Outil | Rôle |
+|---|---|
+| MkDocs Material | Générateur de site statique |
+| GitHub Pages | Hébergement |
+| GitHub Actions | CI/CD (déploiement automatique) |
 
-Install jekyll and bundler:
+## Lancer en local
+
 ```bash
-gem install jekyll bundler
-```
+# Installer les dépendances
+pip install mkdocs-material mkdocs-macros-plugin
 
-Install gems:
-```bash
-bundle install
-```
-
-Build and serve locally with:
-```bash
-bundle exec jekyll serve --host 0.0.0.0
-```
-
-The site should now be available at http://0.0.0.0:4000/ on your local machine, and your local machine's IP address on your network—great for testing on mobile OSes.
-
-[Jekyll]: https://github.com/jekyll/jekyll
-[Waline]: https://github.com/walinejs/waline
-[Umami]: https://github.com/mikecao/umami
-[Leancloud  account]: https://leancloud.app
-[Vercel  account]: https://vercel.com
-[Heroku account]: https://www.heroku.com
+# Serveur de développement (hot-reload)
+mkdocs serve
