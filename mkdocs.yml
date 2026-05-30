@@ -22,9 +22,35 @@ not_in_nav: |
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: pink
-    accent: pink
+    - scheme: latte
+      media: "(prefers-color-scheme: light)"
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Frappé
+
+    - scheme: frappe
+      media: "(prefers-color-scheme: dark)"
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to Macchiato
+
+    - scheme: macchiato
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-partly-cloudy
+        name: Switch to Mocha
+
+    - scheme: mocha
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-cloudy
+        name: Switch to Latte
   font:
     text: Source Sans 3
     code: JetBrains Mono
@@ -54,6 +80,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/layout.css
 
 plugins:
   - blog:

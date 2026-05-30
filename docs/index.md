@@ -80,7 +80,7 @@ Composant **ComboBox multi-sélection** pour PyQt6 avec un design Windows 11 Flu
 
 <div class="project-links" markdown>
 [:fontawesome-brands-github: GitHub](https://github.com/mIcHyAmRaNe/fluent-multiselect){ .md-button .md-button--primary }
-[:fontawesome-brands-python: PyPI](https://pypi.org/project/fluent-multiselect){ .md-button }
+[:fontawesome-brands-python: PyPI](https://pypi.org/project/fluent-multiselect){ .md-button .md-button:not }
 </div>
 
 `PyQt6` `Python` `UI` `Fluent Design` `PyPI`

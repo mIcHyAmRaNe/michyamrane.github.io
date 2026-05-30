@@ -21,6 +21,7 @@ Built with Python 3.x, OKadminFinder offers a robust set of features to ensure e
   - [x] Easy Installation and Updates: Simple commands to install, update, and remove the tool.
   - [x] Extensive Admin Panel Database: Over 1600 potential admin panels.
   - [x] Command-Line Interface: Works with parameters for flexible usage.
+  <!-- more -->
   - [x] Target URL: Specify the target URL for scanning.
   - [x] URLs File: Specify a file containing a list of URLs to scan.
   - [x] Random User Agents: Helps avoid detection by using random user agents.
@@ -42,8 +43,6 @@ Built with Python 3.x, OKadminFinder offers a robust set of features to ensure e
   - [x] Retry Mechanism: Set the number of retries for failed requests.
   - [x] Delay Customization: Fine-tune delay between requests to control response times.
   - [x] Debug Mode: Detailed logging for debugging purposes.
-
-  <!-- more -->
 
 * ## Requirements
 
