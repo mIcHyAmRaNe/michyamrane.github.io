@@ -19,6 +19,8 @@ sudo apt install build-essential
 
 This installs `gcc`, `g++`, `make`, and other tools needed for compiling software.
 
+<!-- more -->
+
 ## 3. Python is Python3 & UV
 
 Ubuntu ships with Python 3 but `python` points to `python3` only after installing this package.
