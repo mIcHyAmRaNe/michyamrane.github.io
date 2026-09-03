@@ -6,5 +6,22 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
-.venv
+# MkDocs
+site/
+
+# Serena
+.serena/
+
+# Caches / linters
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
